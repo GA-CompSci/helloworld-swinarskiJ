@@ -25,6 +25,30 @@ public class App {
         int divisor = 0;
         if(divisor !=0 && 5/divisor > 1) System.out.println("omg");
 
+        //ARRAYS
+        int n,m,u,i = 0; //multi-declaration
+        n=0;
+        m=0;
+        u=0;
 
+        int[] arr = {n,m,u,i}; //copies, not links to the values
+        n=5;
+        System.out.println(arr[0]);
+        System.out.println(n);
+        arr[0] = 5;
+        System.out.println("The array is "+ arr.length + " items long.");
+
+
+        //FUNCTIONS / METHODS
+        System.out.println(addYaBoy("I did ma HW "));
+
+
+
+    } // closes main method
+
+    public static String addYaBoy(String str){
+        return str + "ya boi";
     }
-}
+
+
+}// closes App clas
